@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     'index': './index.js',
   },
+  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
       {
@@ -24,6 +25,6 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
   },
 };
