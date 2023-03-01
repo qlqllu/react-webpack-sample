@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     'index': './index.js',
   },
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -25,6 +25,8 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: './dist',
+    static: {
+      directory: path.join(__dirname, './dist'),
+    }
   },
 };
