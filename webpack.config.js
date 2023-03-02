@@ -21,8 +21,8 @@ module.exports = {
       title: 'app',
       template: 'index.html',
       filename: 'index.html',
-      inject: true,                 // we'll load modules through amd
-    })
+      inject: true
+    }),
   ],
   devServer: {
     static: {
